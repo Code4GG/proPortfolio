@@ -3,72 +3,157 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Minimal Bootstrap Navbar</title>
+  <title>Vincents Portfolio</title>
   
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-      <link rel="stylesheet" href="minimal-bootstrap-navbar/css/style.css">
+ 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/style.css">
 
   
 </head>
 
 <body>
 
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<nav class="navbar">
-	<div class="container-fluid">
-		<!-- Nav Header -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><span class="fa fa-home"></span><span class="link"> Home</span></a>
-		</div>
-		<!-- Nav Collapse -->
-		<div class="navbar-collapse collapse" id="collapse-1">
-			<!-- Nav Left -->
-			<ul class="nav navbar-nav">
-				<!-- Products -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						<span class="fa fa-tags"></span><span class="link"> Products</span> <span class="fa fa-caret-down"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#"><span class="fa fa-tag"></span> Catalogue 1</a></li>
-						<li><a href="#"><span class="fa fa-tag"></span> Catalogue 2</a></li>
-					</ul>
-				</li>
-				<!-- Services -->
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						<span class="fa fa-gears"></span><span class="link"> Services</span> <span class="fa fa-caret-down"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#"><span class="fa fa-gear"/></span> Service 1</a></li>
-						<li><a href="#"><span class="fa fa-gear"/></span> Service 2</a></li>
-						<li><a href="#"><span class="fa fa-gear"/></span> Service 3</a></li>
-					</ul>
-				</li>
-				<!-- About -->
-				<li><a href="#"><span class="fa fa-info-circle"></span><span class="link"> About</span></a></li>
-				<!-- Contact -->
-				<li><a href="#"><span class="fa fa-phone"></span><span class="link"> Contact</span></a></li>
-			</ul>
-		</div>
-	</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-folder"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-phone"></i></a>
+      </li>
+    </ul>
+  </div>
 </nav>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'></script>
-
   
+  <div class="container-fluid contentContainer homeDiv">
+      <h1>Vincent Cavallaro</h1>
+        <h2>Web Developer</h2>
+  </div>
+  <!-- Projects -->
+  <div class="container-fluid contentContainer projects">
+    <h1>Projects <img src="assets/images/openfolder.png"></h1>
+    <div class="row">
+      <!-- <div class="row"> -->
+        <div class="w-100"></div>
+        <div id="clear">
+        <div class="col">
+          <h3 id="node"><img src="assets/images/foldericon.png"> Node</h3>
+        </div>
+        <div class="col">
+          <h3 id="js"><img src="assets/images/foldericon.png"> Javascript</h3>
+        </div>
+        <div class="col">
+          <h3 id="jQuery"><img src="assets/images/foldericon.png"> jQuery</h3>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <h3 id="css"><img src="assets/images/foldericon.png"> CSS</h3>
+        </div>
+        <div class="col">
+          <h3 id="php"><img src="assets/images/foldericon.png"> pHp</h3>
+        </div>
+        <div class="col">
+          <h3 id="bootstrap"><img src="assets/images/foldericon.png"> Bootstrap</h3>
+        </div>
+      </div>
+      <div id="projectContainer">
+        <div id="proCards"></div>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+<!-- About me -->
+  <div class="container-fluid contentContainer">
+    
+  </div>
 
-    <script  src="minimal-bootstrap-navbar/js/navbar.js"></script>
+<!-- Contact -->
+  <div class="container-fluid contentContainer images">
+      <h1>Contact</h1>
+      <!-- <div class="w-100"></div> -->
+      <div class="row">
+        <div class="col">
+          <img class="hvr-grow" src="assets/images/phone.png">
+        </div>
+          <div class="col">
+            <h3 class="hvr-float-shadow mt-4">973-650-8389</h3>
+          </div>
+      </div>
+      <!-- <div class="w-100"></div> -->
+      <div class="row mt-5">
+        <div class="col">
+          <img class="hvr-grow" src="assets/images/email.png">
+        </div>
+          <div class="col">
+            <h3 class="hvr-float-shadow mt-4">Cavallaro.av@gmail.com</h3>
+          </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <img class="hvr-grow" src="assets/images/linked.png">
+        </div>
+          <div class="col">
+            <h3 class="hvr-float-shadow mt-4">Vincent Cavallaro</h3>
+          </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <img class="hvr-grow" src="assets/images/git.png">
+        </div>
+          <div class="col">
+            <h3 class="hvr-float-shadow mt-4">Code4GG</h3>
+          </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <img class="hvr-grow" src="assets/images/stack.png">
+        </div>
+          <div class="col">
+            <h3 class="hvr-float-shadow mt-4">973-650-8389</h3>
+          </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <img class="hvr-grow" src="assets/images/twitter.png">
+        </div>
+          <div class="col">
+            <h3 class="hvr-float-shadow mt-4">@code_purposes</h3>
+          </div>
+      </div>
+  </div>
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/code.js"></script>
+<script type="text/javascript">
 
+  $("document").ready(function(e){
+    $("nav ul li").click(function(e){
+      $("nav ul li").removeClass('active');
+      $(this).addClass('active');
+    })
+  })
 
+   
+
+  $(".contentContainer").css("min-height", $(window).height());
+</script>
 </body>
 
 </html>
