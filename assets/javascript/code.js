@@ -148,7 +148,7 @@ $("#css").on("click", function(){
 function nodeFolder(){
 
 	for (let i = 0; i < nodeArr.length; i++){
-		$('.list-group').append('<li class="list-group-item" style="margin: 10px"><h5 class="card-title">' + nodeArr[i].title + '</h5>' +
+		$('.list-group').append('<li class="list-group-item" style="margin: 10px; width: 1000px;"><h5 class="card-title">' + nodeArr[i].title + '</h5>' +
 			    '<p class="card-text">' + nodeArr[i].description + '</p>' +
 			    '<a href="' + nodeArr[i].code +  '" class="btn btn-primary">View Code</a></li>').css('width', '18rem');
 	}	
@@ -157,7 +157,7 @@ function nodeFolder(){
 function jsFolder(){
 
 	for (let i = 0; i < jsArr.length; i++){
-		$('.list-group').append('<li class="list-group-item" style="margin: 10px"><h5 class="card-title">' + jsArr[i].title + '</h5>' +
+		$('.list-group').append('<li class="list-group-item" style="margin: 10px; width: 1000px;"><h5 class="card-title">' + jsArr[i].title + '</h5>' +
 			    '<p class="card-text">' + jsArr[i].description + '</p>' +
 			    '<a href="' + jsArr[i].code +  '" class="btn btn-primary">View Code</a></li>').css('width', '18rem');
 	}	
@@ -166,7 +166,7 @@ function jsFolder(){
 function phpFolder(){
 
 	for (let i = 0; i < phpArr.length; i++){
-		$('.list-group').append('<li class="list-group-item" style="margin: 10px"><h5 class="card-title">' + phpArr[i].title + '</h5>' +
+		$('.list-group').append('<li class="list-group-item" style="margin: 10px; width: 1000px;"><h5 class="card-title">' + phpArr[i].title + '</h5>' +
 			    '<p class="card-text">' + phpArr[i].description + '</p>' +
 			    '<a href="' + phpArr[i].code +  '" class="btn btn-primary">View Code</a></li>').css('width', '18rem');
 	}	
@@ -174,7 +174,7 @@ function phpFolder(){
 function cssFolder(){
 
 	for (let i = 0; i < cssArr.length; i++){
-		$('.list-group').append('<li class="list-group-item" style="margin: 10px"><h5 class="card-title">' + cssArr[i].title + '</h5>' +
+		$('.list-group').append('<li class="list-group-item" style="margin: 10px; width: 1000px;"><h5 class="card-title">' + cssArr[i].title + '</h5>' +
 			    '<p class="card-text">' + cssArr[i].description + '</p>' +
 			    '<a href="' + cssArr[i].code +  '" class="btn btn-primary">View Code</a></li>').css('width', '18rem');
 	}	

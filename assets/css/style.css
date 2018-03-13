@@ -16,6 +16,7 @@ First Div aka Home
 .homeDiv{
 	background: url(../images/moon.png);
 	background-size: cover;
+  border: 1px solid blue;
 }
 .homeDiv > h1, h2{
 	color: #FFF;
@@ -95,6 +96,9 @@ First Div aka Home
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
+.aboutme{
+  background-color: blue;
+}
 .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -122,3 +126,136 @@ First Div aka Home
   transform: scale(1.1);
 }
 
+
+.masthead {
+  /* Layout declarations */
+  /*background: url("https://images.unsplash.com/photo-1446797376004-9352dfc9f789?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375") no-repeat fixed center;*/
+  background: url(../images/probackground.png) no-repeat fixed center;
+  background-size: cover;
+  padding: 1em 2em;
+  border-top: 8px solid #EDEDED;
+  text-align: center;
+  font-size: 28px;
+}
+
+section {
+  margin-top: 3em;
+  color: white;
+}
+
+/* Gradient that runs through the body */
+.gradient {
+  padding: 10em;
+  /* can be treated like a fallback */
+  background-color: #000000;;
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(#000000, #262626);
+}
+section p {
+  /* Typography declarations */
+  line-height: 1.3em;
+}
+
+/* This class is included in the last p tag of each section to create more space */
+.space-maker {
+  /* Layout declarations */
+  margin-bottom: 3em;
+}
+
+/* FOOTER */
+.content-footer {
+  /* Layout declarations */
+  color: black;
+  padding: 5em;
+  border-bottom: 8px solid #EDEDED;
+}
+.content-footer > ul > li > a > img{
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.content-footer > p {
+  /* Layout declarations */
+  line-height: 1.3em;
+  text-align: center;
+  /* Typography declarations */
+  font-size: 2em;
+}
+
+.social {
+  /* Layout declarations */
+  text-align: center;
+  padding: 0;
+}
+
+.social > li {
+  /* Layout declarations */
+  display: inline-block;
+  line-height: 1.3em;
+  margin-right: 2em;
+  /* Typography declarations */
+  font-size: 2em;
+}
+
+a {
+  /* Typography declarations */
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+a:hover {
+  /* Layout declarations */
+  color: #262626;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.social li:last-child {
+  /* Layout declarations */
+  margin-right: 0;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 500px) {
+  /* HEADER */
+  .masthead {
+    padding: 1em;
+  }
+  
+  /* BODY */
+
+  
+  section p {
+    font-size: 1rem;
+  }
+  
+  /* FOOTER */
+  .content-footer {
+    padding: 4em;
+  }
+  
+  .social > li {
+  /* Layout declarations */
+  display: block;
+  margin-right: 0;
+  }
+  
+  a {
+    line-height: 3em;
+  }
+  
+  .content-footer p a {
+    line-height: 0;
+  } 
+}
+
+  /* FOOTER */
+@media only screen and (max-width: 344px) {
+  .content-footer p a {
+    line-height: 3em;
+  }
+}
