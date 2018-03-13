@@ -259,3 +259,11 @@ a:hover {
     line-height: 3em;
   }
 }
+section > .row > .col-4 > ul > li{
+  list-style: none;
+}
+.masthead > section > img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
