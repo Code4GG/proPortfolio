@@ -179,3 +179,13 @@ function cssFolder(){
 			    '<a href="' + cssArr[i].code +  '" class="btn btn-primary">View Code</a></li>').css('width', '18rem');
 	}	
 }
+
+const targetOffset = $("#project").offset().top;
+
+const $w = $(window).scroll(function(){
+    if ( $w.scrollTop() > targetOffset ) {   
+        $('nav').css({"position":"fixed"});
+    } else{
+    	$('nav').css({"position": "relative"})
+    }
+});

@@ -10,6 +10,7 @@
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">
+    
 
   
 </head>
@@ -24,27 +25,27 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+        <a class="nav-link" href="#home"><i class="fas fa-home"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-folder"></i></a>
+        <a class="nav-link" href="#project"><i class="fas fa-folder"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i></a>
+        <a class="nav-link" href="#mastheads"><i class="fas fa-info-circle"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-phone"></i></a>
+        <a class="nav-link" href="#content-footers"><i class="fas fa-phone"></i></a>
       </li>
     </ul>
   </div>
 </nav>
   
-  <div class="container-fluid contentContainer homeDiv">
+  <div class="container-fluid contentContainer homeDiv" id="home">
       <h1>Vincent Cavallaro</h1>
         <h2>Web Developer</h2>
   </div>
   <!-- Projects -->
-  <div class="container-fluid contentContainer projects">
+  <div class="container-fluid contentContainer projects" id="project">
     <h1>Projects <img src="assets/images/openfolder.png"></h1>
     <div class="row">
       <!-- <div class="row"> -->
@@ -66,6 +67,32 @@
       </div>
       <div id="projectContainer">
         <!-- leave top three projects as default later on -->
+        <div class="cardbox">
+        <div class="card topcards" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/clickygame.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">React Memory Game</h5>
+            <p class="card-text">React game that uses components and props to confuse the players memory while keeping track of scores.</p>
+            <a href="#" class="btn btn-primary">Open App</a>
+          </div>
+        </div>
+        <div class="card topcards" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/mongodb.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">NYT Mongo Scaper</h5>
+            <p class="card-text">This app allows you to bring in the latest articles from new york times through mongodb and allows you to save them to read for later.</p>
+            <a href="https://vmongoscarper.herokuapp.com/" class="btn btn-primary">Open App</a>
+          </div>
+        </div>
+        <div class="card topcards" style="width: 18rem;">
+          <img class="card-img-top" src="assets/images/friendfinder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Friend Finder</h5>
+            <p class="card-text">This app was built to help you find the person with the closest personality to yours.</p>
+            <a href="https://vincentsfriendfinder.herokuapp.com/" class="btn btn-primary">Open App</a>
+          </div>
+        </div>
+      </div>
         <ul class="list-group" style="display:inline;"></ul>
       </div>
     </div>
@@ -73,7 +100,7 @@
 
 
 
-  <header class="masthead">
+  <header class="masthead" id="mastheads">
   <section>
   <h2>About me</h2><img src="assets/images/vincent.jpg">
     <p class="space-maker">I was born in livingston, New Jeresey at St. Barnabas and grew up a town over in west orange which is where I get all my bright ideas from (Home of Thomas Edison) I've been here most of my life but always have been moblie spending a year living in italy with my family and taking various trips over time, I come from a family of traditional values who always expects the most of me because whatever it may be they know I can do better so I put my heart into all of the activities/work I involve myself in.</p>
@@ -87,26 +114,25 @@
     <div class="row">
       <div class="col-4">
         <ul>
-          <li>Node</li>
-          <li>Javascript</li>
-          <li>jQuery</li>
-          <li>Bootstrap</li>
+          <li><img class="icon" src="assets/icons/node.svg"></li>
+          <li><img class="icon" src="assets/icons/javascript.svg"></li>
+          <li><img class="icon" src="assets/icons/jquery.svg"></li>
+          <li><img class="icon" src="assets/icons/react.svg"></li>
         </ul>
       </div>
       <div class="col-4">
         <ul>
-          <li>MongoDB</li>
-          <li>MySql</li>
-          <li>CSS</li>
-          <li>Handlebars</li>
+          <li><img class="icon" src="assets/icons/mongodb.svg"></li>
+          <li><img class="icon" src="assets/icons/mysql.svg"></li>
+          <li><img class="icon" src="assets/icons/css.svg"></li>
+          <li><img class="icon" src="assets/icons/handlebars.svg"></li>
         </ul>
       </div>
       <div class="col-4">
         <ul>
-          <li>Ajax/Api</li>
-          <li>Express</li>
-          <li>Leadership</li>
-          <li>Communications</li>
+          <li><img class="icon" src="assets/icons/html.svg"></li>
+          <li><img class="icon" src="assets/icons/express.svg"></li>
+          <li><img class="icon" src="assets/icons/github.svg"></li>
         </ul>
       </div>
     </div>
@@ -115,7 +141,7 @@
 
 
 <!-- Footer (SECTION 3/3) -->
-<footer class="content-footer">
+<footer class="content-footer" id="content-footers">
   <p>Contact Me:</p>
   <ul class="social">
     <li><a href="cavallaro.av@gmail.com"><img class="hvr-grow" src="assets/images/email.png"><h3 class="hvr-float-shadow mt-4">Cavallaro.av@gmail.com</h3></a></li>

@@ -130,12 +130,19 @@ First Div aka Home
 .masthead {
   /* Layout declarations */
   /*background: url("https://images.unsplash.com/photo-1446797376004-9352dfc9f789?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375") no-repeat fixed center;*/
-  background: url(../images/probackground.png) no-repeat fixed center;
+  background-color:dodgerblue ;
   background-size: cover;
   padding: 1em 2em;
   border-top: 8px solid #EDEDED;
   text-align: center;
   font-size: 28px;
+}
+
+.cardbox{
+  display: inline-flex;
+}
+.topcards{
+  margin: 10px;
 }
 
 section {
@@ -218,6 +225,14 @@ a:hover {
   /* Layout declarations */
   margin-right: 0;
 }
+.icon {
+  width: 30.2%;
+  padding: .6rem;
+  filter: brightness(0) invert(0.6); 
+}
+  .icon:hover {
+    filter: brightness(1) invert(0); 
+  }
 
 /* Responsive design */
 @media only screen and (max-width: 500px) {
